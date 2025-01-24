@@ -127,7 +127,7 @@ def main(mapid, store_files):
     font = get_font()
     clock = pygame.time.Clock()
 
-    client = carla.Client("localhost", 2000)
+    client = carla.Client("10.8.179.139", 2000)
     client.set_timeout(60.0)
 
     client.load_world(town_string)
